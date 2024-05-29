@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 
 
+import Tasks from "./assets/tasks.json"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         
       </div>
       <Footer />
+      <Tasks />
     </>
   );
 }

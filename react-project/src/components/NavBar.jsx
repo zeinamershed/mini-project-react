@@ -1,11 +1,12 @@
 import React from "react";
+import logo from './assets/images/logo.png';
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <button className="nav-button">Add</button>
-      <button className="nav-button">Calendar</button>
-      <button className="nav-button">Deleted items</button>
+      <img src={logo} alt="Logo" className="nav-logo" />
+      <button className="nav-button">To-do List</button>
+  
     </nav>
   );
 };
