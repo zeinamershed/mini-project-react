@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const NavBar = () => {
+const Navbar = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
+    <nav className="navbar">
+      <button className="nav-button">Add</button>
+      <button className="nav-button">Calendar</button>
+      <button className="nav-button">Deleted items</button>
+    </nav>
+  );
+};
 
-export default NavBar
+export default Navbar;
