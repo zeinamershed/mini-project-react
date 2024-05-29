@@ -54,3 +54,27 @@
 .nav-button:hover {
   background-color: #45a049;
 }
+
+.days {
+  display: flex;
+  flex-wrap: wrap;
+  width: 210px; /* 7 days * 30px each + some gap */
+}
+
+.day, .empty {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.empty {
+  background-color: #f00b0b;
+}
+
+.day {
+  background-color: #f00b0b;
+}

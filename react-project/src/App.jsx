@@ -3,6 +3,7 @@ import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 import Calendar from "./components/Calendar";
 
+
 function App() {
   return (
     <>
@@ -10,7 +11,8 @@ function App() {
         <Navbar />
       </div>
       <div className="App">
-        <h1>Calendar App</h1>
+        <h1>To Do App</h1>
+        <Calendar />
         
       </div>
       <Footer />
