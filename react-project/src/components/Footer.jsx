@@ -1,8 +1,8 @@
-import icon from "../assets/icon.png"
+import icon from "../assets/images/icon.png"
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <img src={icon} alt="" />
       
     </div>

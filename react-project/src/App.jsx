@@ -1,23 +1,26 @@
 import "./App.css";
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
-
-
 import Tasks from "./assets/tasks.json"
 
 function App() {
   return (
     <>
-      <div>
+    <div className="App">
+
+      <header>
         <Navbar />
-      </div>
-      <div className="App">
-        <h1>To Do App</h1>
-        
-        
-      </div>
+      </header>
+
+      <br />
+
+      <main className="main">
+        <button className="main-button">To-do List</button>
+      </main>
+
+      <br />
       <Footer />
-      <Tasks />
+      </div>
     </>
   );
 }
