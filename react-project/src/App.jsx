@@ -7,6 +7,16 @@ import { useState } from "react";
 
 function App() {
   const [dataState, setDataState] = useState(tasksData);
+
+  function deleteToDo(toDoTask) {
+    const filteredToDos = dataState.filter((currentElement) => {
+      if (currentElement.task !== toDoTask) {
+        return true;
+      }
+    });
+    setDataState(filteredToDos);
+  }
+
   return (
     <>
       <div className="App">
@@ -18,12 +28,12 @@ function App() {
 
         <main className="main">
           <button className="main-button">To-do List</button>
+          <Tasks data={dataState} deleteToDo={deleteToDo} />
         </main>
 
         <br />
         <Footer />
       </div>
-      <Tasks props={dataState} />
     </>
   );
 }
