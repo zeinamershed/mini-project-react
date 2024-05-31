@@ -22,12 +22,13 @@ function App() {
     <>
       <div className="App">
         <header>
-          <Navbar />
+          <Navbar /> 
         </header>
+
         <br />
+        <Sidebar />
 
         <main className="main">
-          <button className="main-button">To-do List</button>
           <tasks dataState = {dataState} setDataState = {setDataState} />
           <Tasks data={dataState} deleteToDo={deleteToDo} />
         </main>

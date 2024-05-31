@@ -3,10 +3,10 @@ const Tasks = ({ data, deleteToDo }) => {
     <div>
       {data.map((toDo) => {
         return (
-          <div>
-            <h6>{toDo.task}</h6>
-            <h6>{toDo.completed ? "✅" : "✖️"}</h6>
-            <button
+          <div className="todo-container">
+            <h6 className="todo">{toDo.task}</h6>
+            <h6 className="todo-status">{toDo.completed ? "✅" : "✖️"}</h6>
+            <button className="delete"
               onClick={() => {
                 deleteToDo(toDo.task);
               }}
