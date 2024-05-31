@@ -3,7 +3,7 @@ const Tasks = ({ data, deleteToDo }) => {
     <div>
       {data.map((toDo) => {
         return (
-          <div className="todo-container">
+          <div key={toDo.task} className="todo-container">
             <h6 className="todo">{toDo.task}</h6>
             <h6 className="todo-status">{toDo.completed ? "✅" : "✖️"}</h6>
             <button className="delete"
