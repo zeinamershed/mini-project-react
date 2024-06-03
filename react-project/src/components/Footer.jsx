@@ -7,7 +7,7 @@ const Footer = () => {
          <a href="https://github.com/zeinamershed/mini-project-react">
             <img src={githublogo} alt="github-logo"/> 
             
-            </a>
+         </a>
         </button>
         
 

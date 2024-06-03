@@ -9,13 +9,19 @@ const About = () => {
   const nav = useNavigate();
 
   return (
-    <div>
+    <div className="about">
       <h2>Renan and Zeina's mini-project</h2>
-      <button>
-        <a href="https://github.com/zeinamershed/mini-project-react">
-          <img src={githublogo} alt="github-logo" />
+
+      <div >
+        <a href="https://github.com/zeinamershed">
+        <button> Zeina's GitHub </button>
         </a>
-      </button>
+    
+        <a href="https://github.com/renanjazz">
+        <button>Renan's GitHub</button>
+        </a>
+        </div>
+
     </div>
   );
 };

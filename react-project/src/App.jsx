@@ -28,6 +28,9 @@ function App() {
       <div className="App">
         <header>
           <Navbar /> 
+          <Sidebar />
+
+        <br />
           <Routes>
             <Route path="/" element={<DashBoard dataState={dataState} deleteToDo={deleteToDo}/> } />
             <Route path="/About" element={<About />} />
@@ -37,9 +40,7 @@ function App() {
         </header>
 
         <br />
-        <Sidebar />
-
-        <br />
+        
         <Footer />
       </div>
     </>
