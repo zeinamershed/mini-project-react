@@ -1,5 +1,3 @@
-
-
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -34,11 +32,11 @@
   border: 3px solid black;
   padding: 5px;
 }
-.navbar img{
+.navbar img {
   width: 150px;
 }
 
-.navbar h1{
+.navbar h1 {
   font-size: 5rem;
   font-family: sans-serif;
 }
@@ -107,7 +105,6 @@
   width: 200vh;
   background-color: #f4f4f4;
   padding: 20px;
-
 }
 
 .sidebar ul {
@@ -116,17 +113,9 @@
   justify-content: space-around;
 }
 
-.sidebar ul li a {
+.sidebar ul a {
   color: #461f1f;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 5.5rem;
-
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 7.5rem;
+  list-style: none;
 }
-
-
-
-
-
-
-
-

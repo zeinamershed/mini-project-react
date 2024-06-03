@@ -29,8 +29,8 @@ function App() {
         <header>
           <Navbar /> 
           <Routes>
-            <Route path="/" element={<DashBoard />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/" element={<DashBoard dataState={dataState} deleteToDo={deleteToDo}/> } />
+            <Route path="/About" element={<About />} />
             <Route path="/itemDetails" element={<ItemDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -38,11 +38,6 @@ function App() {
 
         <br />
         <Sidebar />
-
-        <main className="main">
-          <button className="main-button">To-do List</button>
-          <Tasks data={dataState} deleteToDo={deleteToDo} />
-        </main>
 
         <br />
         <Footer />
