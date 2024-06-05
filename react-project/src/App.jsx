@@ -13,6 +13,9 @@ import { useState } from "react";
 
 function App() {
   const [dataState, setDataState] = useState(tasksData);
+  const [newTask, setNewTask] = useState("");
+  const [showInput, setShowInput] = useState(false);
+
 
   function deleteToDo(toDoTask) {
     const filteredToDos = dataState.filter((currentElement) => {
@@ -20,8 +23,16 @@ function App() {
         return true;
       }
     });
+
     setDataState(filteredToDos);
   }
+  const addTask = () => {
+    if (newTask.trim() !== "") {
+      setDataState([...dataState, { task: newTask, completed: false }]);
+      setNewTask("");
+      setShowInput(false);
+    }
+  };
 
   return (
     <>
@@ -31,6 +42,8 @@ function App() {
           <Sidebar />
 
         <br />
+        
+
           <Routes>
             <Route path="/" element={<DashBoard dataState={dataState} deleteToDo={deleteToDo}/> } />
             <Route path="/About" element={<About />} />
@@ -40,6 +53,30 @@ function App() {
         </header>
 
         <br />
+        <div className="add-task-container">
+            {showInput && (
+              <>
+                <input
+                  type="text"
+                  value={newTask}
+                  onChange={(e) => setNewTask(e.target.value)}
+                  placeholder="Enter new task"
+                  className="add-task-input"
+                />
+                <button className="save-button" onClick={addTask}>
+                  Save Task
+                </button>
+              </>
+            )}
+            {!showInput && (
+              <button
+                className="add-button"
+                onClick={() => setShowInput(true)}
+              >
+                Add Task
+              </button>
+            )}
+          </div>
         
         <Footer />
       </div>
